@@ -3,7 +3,9 @@
 // The Constructor, Accessors and Mutators have been defined for you
 Money::Money(int dollars, int cents)
       : dollars_(dollars),
-        cents_(cents) {
+        cents_(cents) 
+{
+  
 }
 
 int Money::dollars() const {

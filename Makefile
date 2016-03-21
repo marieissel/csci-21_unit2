@@ -1,3 +1,14 @@
+lab12test: item.o food_item.o magic_item.o lab_12_unit_test.o
+	g++ -Wall -g -o lab12 item.o food_item.o magic_item.o lab_12_unit_test.o
+
+lab12: item.cpp food_item.cpp magic_item.cpp
+	g++ -Wall -g -c item.cpp food_item.cpp magic_item.cpp
+
+lab12_unit: lab_12_unit_test.cpp
+	g++ -Wall -g -c lab_12_unit_test.cpp
+
+
+
 lab11test: money.o lab_11_unit_test.o
 	g++ -Wall -g -o lab11 money.o lab_11_unit_test.o
 
@@ -6,7 +17,6 @@ lab11: money.cpp
 
 lab11_unit: lab_11_unit_test.cpp
 	g++ -Wall -g -c lab_11_unit_test.cpp
-
 
 lab10test: temperature.o lab_10_unit_test.o
 	g++ -Wall -g -o lab10 temperature.o lab_10_unit_test.o

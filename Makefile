@@ -1,3 +1,13 @@
+lab13test: box.o lab_13_unit_test.o
+	g++ -Wall -g -o lab13 box.o lab_13_unit_test.o
+
+lab13: box.cpp
+	g++ -Wall -g -c box.cpp
+
+lab13_unit: lab_13_unit_test.cpp
+	g++ -Wall -g -c lab_13_unit_test.cpp
+
+
 lab12test: item.o food_item.o magic_item.o lab_12_unit_test.o
 	g++ -Wall -g -o lab12 item.o food_item.o magic_item.o lab_12_unit_test.o
 
